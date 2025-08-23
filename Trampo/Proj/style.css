@@ -1,0 +1,26 @@
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+header{
+    background-color: #9b6c2e;
+    height: 130px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    box-shadow: 4px 5px 8px #523918;
+    border-radius: 10px;
+}
+input{
+    text-align: left;
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 40%;
+}
+button{
+
+}
