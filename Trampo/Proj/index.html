@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
 </head>
 <body>
     <header>
      <h1>Teste de JS</h1>
-     <input type="text" placeholder="Digite Aqui">
-     <button class="add">Adicionar</button>
+     <nav>
+        <a href="https://www.youtube.com/watch?v=H77fRz1rybs&list=RDH77fRz1rybs&start_radio=1"
+        target="_blank" rel="external">TEST1</a>
+        <a href="https://www.youtube.com/watch?v=CyVuYAHiZb8&list=RDH77fRz1rybs&index=2" target="_blank" rel="external">TEST2</a>
+        <a href="https://www.youtube.com/watch?v=y2bVIBwpCTA&list=RDH77fRz1rybs&index=7" target="_blank" rel="external">TEST3</a>
+     </nav>
+     <div class="formContainer">
+         <input id="inputTarefa" type="text" placeholder="Digite Sua Tarefa">
+         <button onclick="addTarefa()" id="btn-add" class="add">Adicionar</button>
+     </div>
     </header>
 
+    <main id="areaLista">
+        <div class="item clicado">
+            <div class="itemIcone">
+                <i class="mdi mdi-check-circle"></i>
+            </div>
+            <div class="itemNome">
+                Teste de Tarefa
+            </div>
+            <div class="itemBotao">
+                <button class="deLete"><i class="mdi mdi-delete"></i> Deletar</button>
+            </div>
+        </div>
+    </main>
+    <script src="controle.js"></script>
 </body>
 </html>

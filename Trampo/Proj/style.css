@@ -1,26 +1,118 @@
+@charset "UTF-8";
+
 body{
     background-color: bisque;
 }
 h1{
+    font-size: 1.6em;
     text-align: center;
     font-family: sans-serif;
     color: white;
 }
 header{
     background-color: #9b6c2e;
-    height: 130px;
     padding: 5px 10px;
     margin: 5px 5px;
     box-shadow: 4px 5px 8px #523918;
-    border-radius: 10px;
+    border-radius: 10px 0px;
+}
+nav>a{
+    color: white;
+    font-family: sans-serif;
+    padding: 2px;
+    margin-left: 5px;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+nav>a:hover{
+    text-decoration: underline;
+    background-color: #63431991;
+    border-radius: 3px;
 }
 input{
     text-align: left;
-    font-size: medium;
+    font-size: 1em;
+    padding-left: 10px;
     background-color: rgb(255, 255, 255);
     height: 30px;
     width: 40%;
+    margin: 5px 0px 5px 5px;
+    text-decoration: none;
+    border-radius: 5px 0px;
 }
-button{
+input:hover{
+    border: 2px solid #ffffff;
+}
+button.add{
+    width: 15%;
+    cursor: pointer;
+    background-color: #834f14;
+    color: white;
+    font-weight: bold;
+    height: 36px;
+    border-radius: 5px 0px;
+}
+div.formContainer{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto auto;
+    /*border: 1px solid blue;*/
+    padding-top: 40px;
+    margin: 5px 5px;
+}
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #9b6c2e;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(66, 54, 38, 0.863);
+    margin-bottom: 3%;
+}
 
+.itemIcone{
+    flex: 5%;
+    /*border: 1px solid orangered;*/
+    text-align: center;
+    font-size: 2em;
+}
+.itemNome{
+    flex: 30%;
+    color: white;
+    /*border: 1px solid deeppink;*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.itemBotao{
+    flex: 5%;
+    /*border: 1px solid green;*/
+    text-align: center;
+}
+.deLete{
+    background: rgba(255, 0, 0, 0.452);
+    color: white;
+    border: none;
+    height: 80px;
+    width: 100%;
+}
+.item.clicado{
+    background: rgba(0, 128, 0, 0.425);
+}
+.item.clicado .itemNome{
+    text-decoration: line-through;
+    color: gray;
+}
+.mdi-circle-outline{
+    color: white;
+}
+.mdi-check-circle{
+    color: green;
 }
