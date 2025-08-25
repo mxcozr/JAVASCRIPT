@@ -75,6 +75,7 @@ main{
     width: 100%;
     box-shadow: 0 0 20px rgba(66, 54, 38, 0.863);
     margin-bottom: 3%;
+    cursor: pointer;
 }
 
 .itemIcone{
@@ -102,6 +103,7 @@ main{
     border: none;
     height: 80px;
     width: 100%;
+    cursor: pointer;
 }
 .item.clicado{
     background: rgba(0, 128, 0, 0.425);
